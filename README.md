@@ -12,7 +12,7 @@ The user enters a number and is shown a range of numbers starting from 1 to the 
 * Numbers divisible by 15 are replaced with "PingPong".
 
 #### Installation
-Install cloning the repository listed below
+Install by cloning the repository listed below
 * https://github.com/Rilsta/pingpong.git
 
 #### License
