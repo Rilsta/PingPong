@@ -11,9 +11,19 @@ ul{
   text-align: center;
 }
 
-.col-md-2{
+.col-md-3{
   border: 3px solid #B8EBFF;
   padding: 10px;
   background-color: #B8EBFF;
+  height: 600px;
   float:left;
+}
+
+.col-md-3 h4{
+  color: #FF851B;
+}
+
+.col-md-3 p{
+  color: #AAAAAA;
+  font-weight: bold;
 }
