@@ -1,11 +1,23 @@
+body{
+  background-color: #E2F7FF;
+}
+
 ul{
   list-style: none;
 }
 
+.jumbotron{
+  background-color: #9BE3FF;
+}
+
 .column1{
   margin-right: 50px;
-  border: 3px solid #7FDBFF;
+  border: 3px solid #B8EBFF;
   padding: 10px;
-  background-color: #7FDBFF;
+  background-color: #B8EBFF;
   float:left;
+}
+
+.column1 h5{
+  font-weight: bold;
 }
