@@ -10,8 +10,7 @@ ul{
   background-color: #9BE3FF;
 }
 
-.column1{
-  margin-right: 50px;
+.col-md-2{
   border: 3px solid #B8EBFF;
   padding: 10px;
   background-color: #B8EBFF;
