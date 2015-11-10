@@ -1,29 +1,26 @@
 body{
-  background-color: #E2F7FF;
-}
-
-ul{
-  list-style: none;
+  background-color: #e6e6e6;
 }
 
 .jumbotron{
-  background-color: #9BE3FF;
+  background-color: #f4deb5;
   text-align: center;
 }
 
 .col-md-3{
-  border: 3px solid #B8EBFF;
+  border: 3px solid #90bb90;
   padding: 10px;
-  background-color: #B8EBFF;
+  background-color: #90bb90;
   height: 600px;
+  margin-right: 50px;
   float:left;
 }
 
 .col-md-3 h4{
-  color: #FF851B;
+  color: #f4deb5;
 }
 
 .col-md-3 p{
-  color: #AAAAAA;
+  color: #e6e6e6;
   font-weight: bold;
 }
