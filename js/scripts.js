@@ -1,32 +1,31 @@
-var pingPong = function(pingPongInput){
+var pingPong = function(pingPongNumber){
 
-var pingPongArrays = []
+var pingPongCounts = []
 
-  for (var index = 1; index <= pingPongInput; index += 1)
+  for (var index = 1; index <= pingPongNumber; index += 1)
 
     if (((index % 3) === 0) && ((index % 5) === 0)) {
-      pingPongArrays.push("pingpong");
+      pingPongCounts.push("pingpong");
     }
       else if ((index % 3) === 0){
-        pingPongArrays.push("ping");
+        pingPongCounts.push("ping");
       }
         else if ((index % 5) === 0){
-          pingPongArrays.push("pong");
+          pingPongCounts.push("pong");
         }
           else {
-            pingPongArrays.push(index)
+            pingPongCounts.push(index)
           }
-            return pingPongArrays
+            return pingPongCounts
 };
 
 $(document).ready(function(){
+  $("form#pipoForm").submit(function(event){
 
-  $("form#pingPongForm").submit(function(event){
-    pingPongInput = parseInt($(".pingPongInput").val())
-
-    result = pingPong(pingPongInput)
-
-    $("#pipoResult").append("<li>" + result + "</li>");
+    var pingPongInput = parseInt($("input#pingPongInput").val());
+    var result = pingPong(pingPongInput);
+    
+    $("#pipoResult").empty().append("<li>" + result + "</li>");
 
     event.preventDefault();
 
