@@ -21,13 +21,12 @@ var pingPongArrays = []
 
 $(document).ready(function(){
 
-  $(".pingPong-form").submit(function(event){
+  $("form#pingPongForm").submit(function(event){
+    pingPongInput = parseInt($(".pingPongInput").val())
 
-    pingPongInput = parseInt($("input#pingPongNumber").val());
+    result = pingPong(pingPongInput)
 
-    pingPongResult = pingPong(pingPongInput);
-
-    $("#pipoResult").append("<li>" + pingPongResult + "</li>")
+    $("#pipoResult").append("<li>" + result + "</li>");
 
     event.preventDefault();
 
