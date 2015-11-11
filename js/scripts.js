@@ -1,23 +1,36 @@
 var pingPong = function(pingPongInput){
 
-var myArrays = []
+var pingPongArrays = []
 
   for (var index = 1; index <= pingPongInput; index += 1)
 
     if (((index % 3) === 0) && ((index % 5) === 0)) {
-            myArrays.push("pingpong");
-          }
-
-     else if ((index % 3) === 0){
-        myArrays.push("ping");
+      pingPongArrays.push("pingpong");
+    }
+      else if ((index % 3) === 0){
+        pingPongArrays.push("ping");
       }
         else if ((index % 5) === 0){
-          myArrays.push("pong");
+          pingPongArrays.push("pong");
         }
-
           else {
-            myArrays.push(index)
+            pingPongArrays.push(index)
           }
-              return myArrays
-
+            return pingPongArrays
 };
+
+$(document).ready(function(){
+
+  $(".pingPong-form").submit(function(event){
+
+    pingPongInput = parseInt($("input#pingPongNumber").val());
+
+    pingPongResult = pingPong(pingPongInput);
+
+    $("#pipoResult").append("<li>" + pingPongResult + "</li>")
+
+    event.preventDefault();
+
+  });
+
+});
