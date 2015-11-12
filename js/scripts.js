@@ -21,6 +21,7 @@ if (pingPongNumber < 1){
             pingPongCounts.push(index)
           }
             return pingPongCounts
+
 };
 
 $(document).ready(function(){
