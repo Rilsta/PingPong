@@ -2,6 +2,10 @@ var pingPong = function(pingPongNumber){
 
 var pingPongCounts = []
 
+if (pingPongNumber < 1){
+  alert("Please enter a number greater than 0");
+}
+
   for (var index = 1; index <= pingPongNumber; index += 1)
 
     if (((index % 3) === 0) && ((index % 5) === 0)) {
@@ -12,7 +16,7 @@ var pingPongCounts = []
       }
         else if ((index % 5) === 0){
           pingPongCounts.push("pong");
-        }
+        }  
           else {
             pingPongCounts.push(index)
           }
@@ -23,9 +27,13 @@ $(document).ready(function(){
   $("form#pipoForm").submit(function(event){
 
     var pingPongInput = parseInt($("input#pingPongInput").val());
-    var result = pingPong(pingPongInput);
-    
-    $("#pipoResult").empty().append("<li>" + result + "</li>");
+    var results = pingPong(pingPongInput);
+
+    $("#pipoResult").empty();
+
+    results.forEach(function(result){
+      $("#pipoResult").append("<li>" + result + "</li>");
+    });
 
     event.preventDefault();
 

@@ -16,5 +16,9 @@ describe("pingPong", function(){
     expect(pingPong(15)).to.eql([ 1, 2, "ping", 4, "pong", "ping", 7, 8, "ping", "pong", 11, "ping", 13, 14, "pingpong" ])
   });
 
+  it("returns an error message when input is 0", function(){
+    expect(pingPong(0)).to.eql(alert("Please enter a number greater than 0"))
+  });
+
 });
 
