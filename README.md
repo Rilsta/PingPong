@@ -15,5 +15,10 @@ The user enters a number and is shown a range of numbers starting from 1 to the 
 Install by cloning the repository listed below
 * https://github.com/Rilsta/pingpong.git
 
+#### GitHub Pages
+
+Click the following link to see the finished project:
+* http://rilsta.github.io/PingPong/
+
 #### License
 MIT License. Copyright 2015 Epicodus.
